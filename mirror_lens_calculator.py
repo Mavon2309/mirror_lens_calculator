@@ -1,6 +1,7 @@
 import time
 
-print("Welcome, this will help you calculate the most important things about any mirror and lens calculation")
+#possible extension is to add a magnification calculator, requires knowledge of whether it is a lens or mirror?
+print("Welcome, this will help you calculate the most important things about any mirror and lens calculation. The focal length, image distance, or object distance.")
 time.sleep(0.1)
 
 while True:
@@ -37,6 +38,7 @@ while True:
         if extra == "n": 
             print("Delightful, bye!")
             break
+        #possibly add a error catcher if input doesnt match y or n, another while true loop and finish with break statement outside as well
         print("Lets get to it then!")
     elif to_determine == "v":
         print("Determining image distance.")
@@ -59,3 +61,14 @@ while True:
         print("Lets get to it then!")
     else:
         print("Invalid input! Only f, u, v are allowed. You can't put in " + to_determine + "!")
+
+while True:
+    extra_magnification = input("Would you like to calculate magnification? (Or y or n!)")
+    if extra_magnification == "n":
+        print("Bye!")
+        break
+    elif extra_magnification == "y":
+        print("Not implemented yet! Come back soon!")
+        break
+    else:
+        print("That is not an option!")
